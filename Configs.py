@@ -15,14 +15,14 @@ class Config:
         self.use_gpu = True
 
         # ball_detector config
-        self.ball_config_file = '../faster_rcnn_r50_fpn_1x_ball_blur.py'
-        self.ball_checkpoint_file = '../latest.pth'
+        self.ball_config_file = '/content/ball_detector/faster_rcnn_r50_fpn_1x_ball_blur.py'
+        self.ball_checkpoint_file = '/content/drive/My Drive/latest.pth'
 
-        self.pass_time_file = 'pass_time.json'
+        self.pass_time_file = '/content/drive/My Drive/pass_time.json'
 
         self.videos = {
-            0: "",
-            4: ""
+            0: "/content/drive/My Drive/0.mp4",
+            4: "/content/drive/My Drive/4.mp4"
         }
 
         self.net_heights = {
