@@ -18,7 +18,7 @@ class Config:
         self.ball_config_file = '../faster_rcnn_r50_fpn_1x_ball_blur.py'
         self.ball_checkpoint_file = '../latest.pth'
 
-        self.pass_time_file = ''
+        self.pass_time_file = 'pass_time.json'
 
         self.videos = {
             0: "",
