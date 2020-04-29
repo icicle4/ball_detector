@@ -21,8 +21,8 @@ class Config:
         self.pass_time_file = '/content/drive/My Drive/pass_time.json'
 
         self.videos = {
-            0: "/content/drive/My Drive/0.mp4",
-            4: "/content/drive/My Drive/4.mp4"
+            0: "/Users/linda/Documents/0426实验视频/202002261508前镜头.mp4",
+            4: "/Users/linda/Documents/0426实验视频/202002261508后镜头.mp4"
         }
 
         self.net_heights = {

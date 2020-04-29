@@ -33,12 +33,13 @@ for video_mode, video in cfg.videos.items():
                 cv2.putText(frame, str(i), (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), thickness=2)
                 frame = cv2.resize(frame, (1080, 720))
                 cv2.imshow(f'{video_mode}', frame)
+                cv2.imwrite(f'{i}.jpg', frame)
                 cv2.waitKey(0)
 
-        frame = cv2.resize(frame, (1080, 720))
-        cv2.putText(frame, str(i), (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), thickness=2)
-        cv2.imshow(f'{video_mode}', frame)
-        cv2.waitKey(1)
+        #frame = cv2.resize(frame, (1080, 720))
+        #cv2.putText(frame, str(i), (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), thickness=2)
+        #cv2.imshow(f'{video_mode}', frame)
+        #cv2.waitKey(1)
         i += 1
 
     cap.release()
